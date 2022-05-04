@@ -2,7 +2,6 @@ import torch
 import torch.nn as nn
 from torch.nn.parameter import Parameter
 
-
 class ResnetGenerator(nn.Module):
     def __init__(self, input_nc, output_nc, ngf=64, n_blocks=6, img_size=256, light=False):
         assert(n_blocks >= 0)
